@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="codewlad">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Variáveis no CSS</title>
+</head>
+<body>
+
+    <h1>Usando variáveis no CSS</h1>
+
+    <h2>Por que usar?</h2>
+    <p>O uso de variáveis facilita bastante quando é preciso alterar a cor de vários elementos da página, mas sem mudar manualmente cada um deles.</p>
+
+    <h2>Como usar?</h2>
+    
+    <p>Primeiro, criamos uma pseudoclasse <strong>:root</strong>, e definimos uma váriável que vai armazenar a cor desejada.</p>
+
+    <p>No exemplo abaixo, criamos uma variável que vai armazenar a cor:</p>
+
+    <code>
+        :root {<br>&nbsp;&nbsp;
+            --main-h2-color: #993299;<br>
+        }
+    </code>
+
+    <p>Agora, basta usar a variável criada para todos os elementos que terão a mesma cor, usando o <strong>var(--nome-da-variavel):</strong></p>
+
+    <code>
+        h2 {<br>&nbsp;&nbsp;
+            var(--main-h2-color);<br>
+        }
+    </code>
+
+    <p>Quando quiser alterar a cor de todos os elementos de uma só vez, basta trocar a cor da variável e pronto!</p>
+    
+</body>
+</html>
